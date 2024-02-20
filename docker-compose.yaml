@@ -1,0 +1,8 @@
+version: '3'
+services:
+  docker_test_python:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/usr/src/app  # Monta o diretório local para o diretório de trabalho do contêiner
